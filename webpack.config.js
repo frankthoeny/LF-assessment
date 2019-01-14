@@ -12,7 +12,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
-mode: 'none',
+mode: 'production',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'docs'),
@@ -49,8 +49,8 @@ mode: 'none',
           loader: 'file-loader',
           options: {
              name:'[name].[ext]',
-             outputPath: path.resolve(__dirname, 'dist/images'),
-             publicPath: './public/images'
+             outputPath: path.resolve(__dirname, 'docs/images'),
+             publicPath: 'images'
 
            }
        }
@@ -66,7 +66,7 @@ mode: 'none',
     }),
     new LiveReloadPlugin(),
     new CopyWebpackPlugin ([
-      { from: path.resolve(__dirname, 'public/images'), to: 'images' }
+      { from: path.resolve(__dirname, 'public/images'), to: './images' }
     ])
   ]
 };
