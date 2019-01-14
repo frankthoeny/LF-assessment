@@ -44,15 +44,15 @@ button {
   scroll-snap-type: mandatory;
 
   #slide-0 {
-    background-image: url("/images/bg_m_slide_1.jpg");
+    background-image: url("../public/images/bg_m_slide_1.jpg");
   }
 
   #slide-1 {
-    background-image: url("/images/bg_m_slide_2.jpg");
+    background-image: url("../public/images/bg_m_slide_2.jpg");
   }
 
   #slide-2 {
-    background-image: url("/images/bg_m_slide_3.jpg");
+    background-image: url("../public/images/bg_m_slide_3.jpg");
   }
 
   .slide {
@@ -118,7 +118,7 @@ $i: 0;
     }
 
     #slide-0.slide {
-      background-image: url("/images/bg_r_slide_1.jpg");
+      background-image: url("../public/images/bg_r_slide_1.jpg");
 
       .slide-body {
         margin: 300px auto auto -15px;
@@ -126,7 +126,7 @@ $i: 0;
     }
 
     #slide-1.slide {
-      background-image: url("/images/bg_r_slide_2.jpg");
+      background-image: url("../public/images/bg_r_slide_2.jpg");
 
       .slide-body {
         margin: 300px -430px;
@@ -134,7 +134,7 @@ $i: 0;
     }
 
     #slide-2.slide {
-      background-image: url("/images/bg_r_slide_3.jpg");
+      background-image: url("../public/images/bg_r_slide_3.jpg");
 
       .slide-body {
         margin: 300px 250px;
